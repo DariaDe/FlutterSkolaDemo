@@ -12,6 +12,7 @@ class Lesson1 {
 
   /// Вычисление квадрата целого числа
   int sqr(int x) => x * x;
+  int change = 1;
 
   /// Вычисление квадрата вещественного числа
   double sqrDouble(double x) => x * x;
