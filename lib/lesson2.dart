@@ -72,9 +72,7 @@ class Lesson2 {
 ///
 /// Мой возраст. Для заданного 0 < n < 200, рассматриваемого как возраст человека,
 /// вернуть строку вида: «21 год», «32 года», «12 лет».
-String ageDescription(int age) {
-  //TODO
-}
+String ageDescription(int age) {}
 
 /// Простая (2 балла)
 ///
@@ -94,9 +92,7 @@ int rookOrBishopThreatens(int kingX, kingY, rookX, rookY, bishopX, bishopY) {
 /// Проверить, является ли данный треугольник остроугольным (вернуть 0),
 /// прямоугольным (вернуть 1) или тупоугольным (вернуть 2).
 /// Если такой треугольник не существует, вернуть -1.
-int triangleKind(double a, b, c) {
-//TODO
-}
+int triangleKind(double a, b, c) {}
 
 /// Простая (2 балла)
 ///
@@ -105,7 +101,13 @@ int triangleKind(double a, b, c) {
 ///
 /// Использовать операции со строками в этой задаче запрещается.
 int digitNumber(int n) {
-//TODO
+  int count = 0;
+  while (n != 0) {
+    n = n ~/ 10;
+    count++;
+  }
+
+  return count;
 }
 
 /// Простая (2 балла)
@@ -113,7 +115,11 @@ int digitNumber(int n) {
 /// Найти число Фибоначчи из ряда 1, 1, 2, 3, 5, 8, 13, 21, ... с номером n.
 /// Ряд Фибоначчи определён следующим образом: fib(1) = 1, fib(2) = 1, fib(n+2) = fib(n) + fib(n+1)
 int fib(int n) {
-//TODO
+  if ((n == 1) || (n == 2)) {
+    return 1;
+  } else {
+    return fib(n - 1) + fib(n - 2);
+  }
 }
 
 /// Средняя (3 балла)
